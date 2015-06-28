@@ -12,7 +12,7 @@ import com.google.common.util.concurrent.ListenableFuture;
 public class RootActor extends Actor<Root> implements Root {
 
 	@Override
-	public ListenableFuture<Boolean> shove() {
+	public ListenableFuture<Boolean> start() {
 		try {
 			Foo foo100 = find(Foo.class, 100);
 			String r = foo100.doThing().get();

@@ -9,7 +9,7 @@ import ph.actors.root.RootActor;
  */
 public class Main {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		Stage stage = new Stage();
 		stage.addRole(FooActor.class);
 		stage.addRole(BarActor.class);

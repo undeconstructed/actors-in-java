@@ -13,7 +13,11 @@ public class Actor<Iface> {
 		this.stage = stage;
 	}
 
+	protected Key self() {
+		return key;
+	}
+
 	protected <I> I find(Class<I> i, long id) {
-		return stage.find(i, id);
+		return stage.find(key, i, id);
 	}
 }

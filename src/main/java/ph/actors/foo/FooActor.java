@@ -8,7 +8,7 @@ import ph.actors.actors.Actor;
 /**
  * TODO
  */
-public class FooActor extends Actor<FooActor> implements Foo {
+public class FooActor extends Actor<Foo> implements Foo {
 
 	@Override
 	public ListenableFuture<String> doThing() {
