@@ -1,11 +1,11 @@
 package ph.actors.foo;
 
-import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.CompletionStage;
 
 /**
  * TODO
  */
 public interface Foo {
 
-	public ListenableFuture<String> doThing();
+	public CompletionStage<String> doThing(int times);
 }

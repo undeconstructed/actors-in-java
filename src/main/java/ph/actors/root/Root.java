@@ -1,11 +1,11 @@
 package ph.actors.root;
 
-import com.google.common.util.concurrent.ListenableFuture;
+import java.util.concurrent.CompletionStage;
 
 /**
  * TODO
  */
 public interface Root {
 
-	public abstract ListenableFuture<Boolean> start();
+	public abstract CompletionStage<Boolean> start();
 }

@@ -6,9 +6,9 @@ package ph.actors.actors;
 public class Actor<Iface> {
 
 	private Key key;
-	private Stage stage;
+	private Platform stage;
 
-	final void setup(Key key, Stage stage) {
+	final void setup(Key key, Platform stage) {
 		this.key = key;
 		this.stage = stage;
 	}

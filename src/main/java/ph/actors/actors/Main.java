@@ -10,9 +10,9 @@ import ph.actors.root.RootActor;
 public class Main {
 
 	public static void main(String[] args) throws Exception {
-		Stage stage = new Stage();
-		stage.addRole(FooActor.class);
-		stage.addRole(BarActor.class);
-		stage.start(stage.addRole(RootActor.class));
+		Platform stage = new Platform();
+		stage.addActorType(FooActor.class);
+		stage.addActorType(BarActor.class);
+		stage.start(stage.addActorType(RootActor.class));
 	}
 }
